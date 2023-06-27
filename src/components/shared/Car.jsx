@@ -22,7 +22,7 @@ const Car = (props) => {
              className="lg:hidden absolute left-0 top-0 p-3 box-content text-gray-300 bg-[#262837] rounded-full left-4 top-4 text-xl"/>
              <h1 className="text-2xl my-4">Orders #20232606</h1>
              {/**pills */}
-             <div className="flex items-center gap-4 flex-wrap">
+             <div className="flex items-center gap-2 flex-wrap">
                  <button className="bg-[#ec7c6a] text-white py-2 px-4 rounded-xl">
                      Comprar
                  </button>
