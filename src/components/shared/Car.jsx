@@ -44,7 +44,7 @@ const Car = (props) => {
                  </div>
                  
                  {/**Products */}
-                 <div className=" h-[400px]  md:h-[700px] lg:h-[400px] overflow-y-auto overflow-x-hidden ">
+                 <div className=" h-[400px]  md:h-[700px]  overflow-y-auto overflow-x-hidden mt-2">
                      {/**Product */}
                      <div className="bg-[#262837] p-4 rounded-xl mb-2">
                      <div className="grid grid-cols-6 mb-2">
