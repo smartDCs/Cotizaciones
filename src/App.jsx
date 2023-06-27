@@ -69,15 +69,15 @@ function App() {
                     <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
                         {/**card */}
 
-                        <Card2 img="/assets/images/domotica.jpg" desc="Home automation" name="Domótica"
-                            price={534}
+                        <Card2 img="/assets/images/TC30.jpeg" desc="Cerradura inteligente, para puerta de vidrio templado" name="GLS-TC30"
+                            price={"180 +iva"}
                             href="https://www.google.com"/>
 
-                        <Card2 img="/assets/images/domotica.jpg" desc="Home automation" name="Domótica"
-                            price={534}
+                        <Card2 img="/assets/images/TS68.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS68"
+                            price={"280 +iva"}
                             href="#"/>
-                        <Card2 img="/assets/images/domotica.jpg" desc="Home automation" name="Domótica"
-                            price={534}
+                        <Card2 img="/assets/images/TS12.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS12"
+                            price={"280 +iva"}
                             href="#"/>
                     </div>
                 </div>
