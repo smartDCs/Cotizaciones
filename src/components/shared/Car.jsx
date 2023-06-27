@@ -16,7 +16,7 @@ const Car = (props) => {
     z-50 `}
      >
          {/**Orders */}
-         <div className="relative pt-16  lg:pt-8 text-gray-300 p-8 h-full ">
+         <div className="relative pt-16  lg:pt-2 text-gray-300 p-8 h-full ">
              <MdClose 
              onClick={()=>setShowOrder(false)}
              className="lg:hidden absolute left-0 top-0 p-3 box-content text-gray-300 bg-[#262837] rounded-full left-4 top-4 text-xl"/>
@@ -35,7 +35,7 @@ const Car = (props) => {
              </div>
              {/**Car */}
              <div>
-                 <div className="grid grid-cols-6 mb-4 p-4">
+                 <div className="grid grid-cols-6 mb-4 p-4 lg:mb-2">
                      <h5 className="col-span-4">
                          Item
                      </h5>
@@ -44,9 +44,47 @@ const Car = (props) => {
                  </div>
                  
                  {/**Products */}
-                 <div className=" h-[400px]  md:h-[700px] lg:h-[350px] overflow-y-auto overflow-x-hidden ">
+                 <div className=" h-[400px]  md:h-[700px] lg:h-[400px] overflow-y-auto overflow-x-hidden ">
                      {/**Product */}
-                     <div className="bg-[#262837] p-4 rounded-xl mb-4">
+                     <div className="bg-[#262837] p-4 rounded-xl mb-2">
+                     <div className="grid grid-cols-6 mb-2">
+                         {/**Product description */}
+                         <div className="col-span-4 flex items-center gap-3">
+                             <img src="/assets/images/domotica.jpg" className="w-10 h-10 object-cover"/>
+                             <div>
+                                 <h5 className="text-sm">Domótica</h5>
+                                 <p className="text-xs text-gray-500">$5230</p>
+                             </div>
+
+                         </div>
+                         {/* Quantity  */}
+                         <div>
+                             <span>
+                                 2
+                             </span>
+                         </div>
+                         {/**Price */}
+                         <div>
+                             <span>
+                                 $531
+                             </span>
+                         </div>
+                     </div>
+                     {/**Note */}
+                     <div className="grid grid-cols-6 items-center">
+                         <form className="col-span-5">
+                             <input type="text" 
+                             className="bg-[#1f1d2b] py-2 px-4 rounded-lg outline-none" 
+                             placeholder="Comentarios"/>
+                         </form>
+                         <div className="col-span-1 text-center">
+                             <button className="border border-red-500 p-2 rounded-lg">
+                                 <MdDeleteForever className="text-red-500 "/>
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+                 <div className="bg-[#262837] p-4 rounded-xl mb-2">
                      <div className="grid grid-cols-6 mb-4">
                          {/**Product description */}
                          <div className="col-span-4 flex items-center gap-3">
@@ -82,7 +120,7 @@ const Car = (props) => {
                          </div>
                      </div>
                  </div>
-                 <div className="bg-[#262837] p-4 rounded-xl mb-4">
+                 <div className="bg-[#262837] p-4 rounded-xl mb-2">
                      <div className="grid grid-cols-6 mb-4">
                          {/**Product description */}
                          <div className="col-span-4 flex items-center gap-3">
@@ -118,43 +156,7 @@ const Car = (props) => {
                          </div>
                      </div>
                  </div>
-                 <div className="bg-[#262837] p-4 rounded-xl mb-4">
-                     <div className="grid grid-cols-6 mb-4">
-                         {/**Product description */}
-                         <div className="col-span-4 flex items-center gap-3">
-                             <img src="/assets/images/domotica.jpg" className="w-10 h-10 object-cover"/>
-                             <div>
-                                 <h5 className="text-sm">Domótica</h5>
-                                 <p className="text-xs text-gray-500">$5230</p>
-                             </div>
-
-                         </div>
-                         {/* Quantity  */}
-                         <div>
-                             <span>
-                                 2
-                             </span>
-                         </div>
-                         {/**Price */}
-                         <div>
-                             <span>
-                                 $531
-                             </span>
-                         </div>
-                     </div>
-                     {/**Note */}
-                     <div className="grid grid-cols-6 items-center">
-                         <form className="col-span-5">
-                             <input type="text" className="bg-[#1f1d2b] py-2 px-4 rounded-lg outline-none" placeholder="Comentarios"/>
-                         </form>
-                         <div className="col-span-1 text-center">
-                             <button className="border border-red-500 p-2 rounded-lg">
-                                 <MdDeleteForever className="text-red-500 "/>
-                             </button>
-                         </div>
-                     </div>
-                 </div>
-                 <div className="bg-[#262837] p-4 rounded-xl mb-4">
+                 <div className="bg-[#262837] p-4 rounded-xl mb-2">
                      <div className="grid grid-cols-6 mb-4">
                          {/**Product description */}
                          <div className="col-span-4 flex items-center gap-3">
@@ -194,7 +196,7 @@ const Car = (props) => {
                 
              </div>
              {/**Submit payment */}
-             <div className="bg-[#262837] absolute w-full left-0 bottom-0 p-4">
+             <div className="bg-[#262837] absolute w-full left-0 bottom-0 p-4 lg:h-[180px]">
                 <div className="flex items-center justify-between">
                  <span className="text-gray-400">Descuento</span>
                  <span className="text-gray-400">$0</span>
@@ -203,11 +205,11 @@ const Car = (props) => {
                  <span className="text-gray-400">Subtotal</span>
                  <span className="text-gray-400">$3202</span>
                 </div>
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-4 lg:mb-2">
                  <span className="text-gray-400">Iva 12%</span>
                  <span className="text-gray-400">$123</span>
                 </div>
-                <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center justify-between mb-6 lg:mb-2">
                  <span>Total</span>
                  <span>$12393</span>
                 </div>
