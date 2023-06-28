@@ -24,20 +24,19 @@ const NavBar = (props) => {
         <Sidebar showMenu={showMenu}/> {/**menu movil */}
             <Car showOrder={showOrder}
                 setShowOrder={setShowOrder}/>
-        <nav className="bg-[#1f1d2b] lg:hidden fixed w-full bottom-0 left-0 text-3xl
-                    py-4 px-8 flex items-center justify-between text-gray-400
+        <nav className="bg-[#1f1d2b] lg:hidden fixed w-full bottom-0 left-0 text-xl
+                    py-2 px-8 flex items-center justify-between text-gray-400
                     rounded-tl-xl rounded-tr-xl">
-            <button className="p-2">
+            <button className="p-2" >
                 <RiHome3Fill/>
 
             </button>
-            <button className="p-2">
-                <FaUserLarge/>
-            </button>
+           {/** 
             <button onClick={toggleOrder}
                 className="p-2">
                 <MdOutlineShoppingBag/>
             </button>
+            */}
             <button className="p-2"
                 onClick={toggleMenu}>
                 {
