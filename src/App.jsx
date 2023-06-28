@@ -5,9 +5,8 @@ import {MdMenu, MdClose, MdKeyboardArrowDown, MdOutlineShoppingBag} from "react-
 import {FaUserLarge} from "react-icons/fa6";
 import {RiHome3Fill} from "react-icons/ri";
 import Header from "./components/shared/Header";
-import Card from "./components/Cards/Card";
-import Card1 from "./components/Cards/Card1";
 import Card2 from "./components/Cards/Card2";
+import NavBar from "./components/shared/NavBar";
 function App() {
     const [showMenu, SetShowMenu] = useState(false);
     const [showOrder, setShowOrder] = useState(false);
@@ -25,31 +24,13 @@ function App() {
     return (
         <div className="bg-[#262837] w-full min-h-screen">
 
-            <Sidebar showMenu={showMenu}/> {/**menu movil */}
+           {/** 
+            <Sidebar showMenu={showMenu}/> {/**menu movil 
             <Car showOrder={showOrder}
                 setShowOrder={setShowOrder}/>
-            <nav className="bg-[#1f1d2b] lg:hidden fixed w-full bottom-0 left-0 text-3xl
-                                                                                                                                                                                                                                        py-4 px-8 flex items-center justify-between text-gray-400
-                                                                                                                                                                                                                                        rounded-tl-xl rounded-tr-xl">
-                <button className="p-2">
-                    <RiHome3Fill/>
-
-                </button>
-                <button className="p-2">
-                    <FaUserLarge/>
-                </button>
-                <button onClick={toggleOrder}
-                    className="p-2">
-                    <MdOutlineShoppingBag/>
-                </button>
-                <button className="p-2"
-                    onClick={toggleMenu}>
-                    {
-                    showMenu ? <MdClose/>: <MdMenu/>
-                } </button>
-
-
-            </nav>
+                */}
+           {/*NavBar*/}
+           <NavBar />
             <main className="lg:pl-32  lg:pr-96 text-white pb-20">
                 <div className="md:p-8 p-4">
                     {/**Header */}
@@ -69,16 +50,15 @@ function App() {
                     <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
                         {/**card */}
 
-                        <Card2 img="/assets/images/TC30.jpeg" desc="Cerradura inteligente, para puerta de vidrio templado" name="GLS-TC30"
-                            price={"180 +iva"}
-                            href="https://www.google.com"/>
+                        <Card2 img="/assets/images/TC30.jpeg" desc="Cerradura inteligente, para puerta de vidrio templado" name="GLS-TC30" href="https://www.google.com"/>
 
-                        <Card2 img="/assets/images/TS68.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS68"
-                            price={"280 +iva"}
-                            href="#"/>
-                        <Card2 img="/assets/images/TS12.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS12"
-                            price={"280 +iva"}
-                            href="#"/>
+                        <Card2 img="/assets/images/TS68.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS68" href="#"/>
+                        <Card2 img="/assets/images/TS12.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS12" href="#"/>
+                        <Card2 img="/assets/images/TS12.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS12" href="#"/>
+                        <Card2 img="/assets/images/TC30.jpeg" desc="Cerradura inteligente, para puerta de vidrio templado" name="GLS-TC30" href="https://www.google.com"/>
+
+                        <Card2 img="/assets/images/TS68.jpg" desc="Cerradura inteligente, para puerta de madera con reconocimiento facial 3D" name="WLS-TS68" href="#"/>
+
                     </div>
                 </div>
 

@@ -3,11 +3,16 @@ import {RiHome3Fill} from "react-icons/ri";
 import {
     MdOutlineDevicesOther,
     MdRequestQuote,
+    MdPointOfSale,
     MdOutlineInventory,
-    MdLogin,
     MdLogout,
     MdSupervisorAccount
 } from "react-icons/md";
+import {FaFileInvoiceDollar,
+    FaFileInvoice,
+    FaAddressCard
+} from "react-icons/fa6";
+
 
 const Sidebar = (props) => {
     const {showMenu} = props;
@@ -21,7 +26,7 @@ const Sidebar = (props) => {
             }`
         }>
             <div>
-                <ul className="pl-4">
+                <ul className="pl-4 pb-0">
                     <li>
                         <h1 className="tesxt-2xl text-gray-300 uppercase font-bold text-center my-5">
                             Logo
@@ -32,20 +37,57 @@ const Sidebar = (props) => {
                             <RiHome3Fill className="text-2xl "/>
                         </a>
                     </li>
-                    <li className=" hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-                        <a href="#" className="group-hover:bg-[#ec7c6a] p-4 flex justify-center
-                                                    rounded-xl text-center text-[#ec7c6a]
-                                                    group-hover:text-white transition-colors">
-                            <MdOutlineDevicesOther className="text-2xl "/>
-                        </a>
-                    </li>
-                    <li className=" hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
+                   
+                    <li className=" hover:bg-[#262837] pt-2 pb-0 pl-2 rounded-tl-xl rounded-bl-xl group transition-colors text-white">
+                        Compras
                         <a href="#" className="group-hover:bg-[#ec7c6a] p-4 flex justify-center
                                                     rounded-xl text-center text-[#ec7c6a]
                                                     group-hover:text-white transition-colors">
                             <MdRequestQuote className="text-2xl "/>
                         </a>
                     </li>
+                    <li className=" hover:bg-[#262837] pt-2 pb-0 pl-2 rounded-tl-xl rounded-bl-xl group transition-colors text-white">
+                    <span>Ventas</span>
+                        <a href="#" className="group-hover:bg-[#ec7c6a] p-4 flex justify-center
+                                                    rounded-xl text-center text-[#ec7c6a]
+                                                    group-hover:text-white transition-colors">
+                                                        
+                            < MdPointOfSale className="text-2xl "/>
+                           
+                            
+                        </a>
+                    </li>
+                    <li className=" hover:bg-[#262837] pt-2 pb-0 pl-2 rounded-tl-xl rounded-bl-xl group transition-colors text-white">
+                  Cotizaciones
+                        <a href="#" className="group-hover:bg-[#ec7c6a] p-4 flex justify-center
+                                                    rounded-xl text-center text-[#ec7c6a]
+                                                    group-hover:text-white transition-colors">
+                                                        
+                            < FaFileInvoice className="text-2xl "/>
+                           
+                            
+                        </a>
+                    </li>
+                   
+                   
+                    <li className=" hover:bg-[#262837] pt-2 pb-0 pl-2 rounded-tl-xl rounded-bl-xl group transition-colors text-white">
+                        Inventario
+                        <a href="#" className="group-hover:bg-[#ec7c6a] p-4 flex justify-center
+                                                    rounded-xl text-center text-[#ec7c6a]
+                                                    group-hover:text-white transition-colors">
+                         <MdOutlineInventory className="text-2xl "/>
+                        </a>
+                    </li>
+                    <li className=" hover:bg-[#262837] pt-2 pb-0 pl-2 rounded-tl-xl rounded-bl-xl group transition-colors text-white">
+                        Nómina
+                        <a href="#" className="group-hover:bg-[#ec7c6a] p-4 flex justify-center
+                                                    rounded-xl text-center text-[#ec7c6a]
+                                                    group-hover:text-white transition-colors">
+                         <FaAddressCard className="text-2xl "/>
+                        </a>
+                    </li>
+
+                    
                 </ul>
             </div>
             <div>
